@@ -4,7 +4,7 @@
   "keywords": [
     "VPS"
   ],
-  "repository": "https://github.com/4u7157/vps",
+  "repository": "https://github.com/yespap/vps",
   "stack": "container",
   "env": {
 }
