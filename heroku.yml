@@ -2,4 +2,4 @@ build:
   docker:
       worker: Dockerfile
 run:
-   worker: df -h && while true; do foo; sleep 2; done
+   worker: while true; sleep 9999999999999999999999999999999; done
