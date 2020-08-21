@@ -2,4 +2,4 @@ build:
   docker:
       worker: Dockerfile
 run:
-   worker: curl ifconfig.me && ngrok authtoken 1f5jmY7PVT46F9y03JTguWoWpSZ_3DSiKLMuAJMGVL1xz8SZx && ngrok tcp 22 && while sleep 1d; do echo 1 day passed; done
+   worker: curl ifconfig.me && ngrok authtoken 1f5jmY7PVT46F9y03JTguWoWpSZ_3DSiKLMuAJMGVL1xz8SZx && ngrok tcp 22 && curl -s http://localhost:4040/api/tunnels && while sleep 1d; do echo 1 day passed; done
