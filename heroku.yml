@@ -2,4 +2,4 @@ build:
   docker:
       worker: Dockerfile
 run:
-   worker: curl ifconfig.me && grep Port /etc/ssh/sshd_config && while sleep 1d; do echo 1 day passed; done
+   worker: curl ifconfig.me && systemctl enable ssh && systemctl start ssh && ufw allow ssh && ufw enable && while sleep 1d; do echo 1 day passed; done
