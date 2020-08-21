@@ -2,4 +2,4 @@ build:
   docker:
       worker: Dockerfile
 run:
-   worker: while true; sleep 9999999999999999999999999999999; done
+   worker: while sleep 1d; do echo 1 day passed; done
