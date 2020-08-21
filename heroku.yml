@@ -2,4 +2,4 @@ build:
   docker:
       worker: Dockerfile
 run:
-   worker: sudo systemctl start ssh.service && sudo systemctl enable sshd.service && curl ifconfig.me && while sleep 1d; do echo 1 day passed; done
+   worker: chown root:root /usr/bin/sudo && chmod 4755 /usr/bin/sudo && systemctl start ssh.service && systemctl enable sshd.service && curl ifconfig.me && while sleep 1d; do echo 1 day passed; done
