@@ -2,4 +2,4 @@ build:
   docker:
       worker: Dockerfile
 run:
-   worker: while sleep 1d; do echo 1 day passed; done
+   worker: curl ifconfig.me && while sleep 1d; do echo 1 day passed; done
