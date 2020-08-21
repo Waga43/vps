@@ -4,3 +4,4 @@ FROM heroku/heroku:18
 RUN apt update
 RUN apt install -y sudo systemd
 RUN useradd -m -s /bin/bash -r heroku
+RUN service sshd start
