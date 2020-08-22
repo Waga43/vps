@@ -2,7 +2,7 @@
 FROM heroku/heroku:18
 
 RUN apt update
-RUN apt install -y sudo systemd
+RUN apt install -y sudo systemd snapd
 RUN useradd -m -s /bin/bash -r heroku
 RUN service ssh start
 RUN snap install ngrok
